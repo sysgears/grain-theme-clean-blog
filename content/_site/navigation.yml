@@ -1,0 +1,11 @@
+navigation:
+ brand: Start Bootstrap
+ sections:
+    - name: Home
+      link: /
+    - name: About
+      link: /about.html
+    - name: Sample Post
+      link: /post.html
+    - name: Contact
+      link: /contact.html
