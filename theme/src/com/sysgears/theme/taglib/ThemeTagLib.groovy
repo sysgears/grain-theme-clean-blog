@@ -25,4 +25,13 @@ class ThemeTagLib {
 
         String.format("%tFT%<tT${tz.substring(0, 3)}:${tz.substring(3)}", model.date)
     }
+
+    /**
+     * Loads configuration bundle represented by .yml files from the specified location.
+     */
+    def loadConfigBundle = { String location ->
+        new File(taglib.site.content_dir as String, location).eachFileMatch(~/.*\.yml$/) { file ->
+            taglib.page += taglib.site.headerParser.parse(file, file.text)
+        }
+    }
 }
