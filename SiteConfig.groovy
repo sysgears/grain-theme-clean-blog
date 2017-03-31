@@ -48,6 +48,18 @@ ruby {
     //ruby_gems = '2.2.2'
 }
 
+posts_base_url = '/blog/posts/'
+
+// Blog configuration for rss and atom feeds.
+blog_feed {
+    title = 'Clean Blog'
+    author {
+        name = 'John Doe'
+        email = 'author@email.com'
+    }
+    posts_per_feed = 20
+}
+
 // Deployment settings.
 s3_bucket = '' // your S3 bucket name
 deploy_s3 = "s3cmd sync --acl-public --reduced-redundancy ${destination_dir}/ s3://${s3_bucket}/"
