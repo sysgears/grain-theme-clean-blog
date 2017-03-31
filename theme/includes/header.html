@@ -1,13 +1,17 @@
 <!-- Page Header -->
 <!-- Set your background image for this header on the line below. -->
-<header class="intro-header" style="background-image: url('/images/${page.header.background}')">
+<header class="intro-header" style="background-image: url('/images/${page.image ?: page.header.background}')">
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                 <div class="page-heading">
-                    <h1>${page.header.heading}</h1>
+                    <h1>${page.title ?: page.header.heading}</h1>
                     <hr class="small">
-                    <span class="subheading">${page.header.subheading}</span>
+                    <span class="subheading">
+                        <%=
+                            (page.author && page.date) ? "Posted by ${page.author} on ${page.date.format('MMMM dd, yyyy')}" : page.header.subheading
+                        %>
+                    </span>
                 </div>
             </div>
         </div>
