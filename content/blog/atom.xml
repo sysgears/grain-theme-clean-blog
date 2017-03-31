@@ -6,8 +6,8 @@
     <updated>${page.lastUpdated.format("yyyy-MM-dd'T'HH:mm:ssXXX")}</updated>
     <id>${site.url}</id>
     <author>
-        <name><![CDATA[${site.blog_feed.author.name}]]></name>
-        <% if (site.blog_feed.author.email) { %>
+        <name><![CDATA[${post.author}]]></name>
+        <% if (post.author_email) { %>
             <email><![CDATA[${site.blog_feed.author.email}]]></email>
         <% } %>
     </author>
