@@ -22,11 +22,11 @@ layout: site
             <!-- Pager -->
             <ul class="pager">
                 <% if (page.paginator.next_page) { %>
-                    <li class="next"><a href="${page.paginator.next_page}">Next Posts &rarr;</a></li>
+                    <li class="next"><a href="${page.paginator.next_page}">Older Posts &rarr;</a></li>
                 <% } %>
 
                 <% if (page.paginator.prev_page) { %>
-                    <li class="previous"><a href="${link page.paginator.prev_page}">&larr; Older Posts  </a></li>
+                    <li class="previous"><a href="${link page.paginator.prev_page}">&larr; Newer Posts  </a></li>
                 <% } %>
             </ul>
         </div>
