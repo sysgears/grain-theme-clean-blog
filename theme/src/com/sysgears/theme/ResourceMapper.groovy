@@ -48,7 +48,7 @@ class ResourceMapper {
                     def feedPosts = posts.take(site.blog_feed.posts_per_feed as Integer)
                     updatedResources << (page + [posts: feedPosts, lastUpdated: lastUpdated])
                     break
-                case '/blog/':
+                case '/':
                     applyPagination(posts, 3, page.url)
                     break
                 case ~/${site.posts_base_url}.*/:
