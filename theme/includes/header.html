@@ -7,14 +7,7 @@
                 <div class="page-heading">
                     <h1>${page.title ?: page.header.heading}</h1>
                     <hr class="small">
-                    <span class="subheading"><i>
-                        <%=
-                            if (page.author && page.date) {
-                                def maybePageAuthorLink = (page.author_link) ? "<a href=\"${page.author_link}\">${page.author}</a>" : page.author
-                                "Posted by " + maybePageAuthorLink + " on " + page.date.format('MMMM dd, yyyy')
-                            } else {page?.header?.subheading ?: ""}
-                        %>
-                    </i></span>
+                    <span class="subheading"> ${renderPostDateAndAuthor(page)} </span>
                 </div>
             </div>
         </div>

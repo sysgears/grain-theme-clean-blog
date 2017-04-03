@@ -35,6 +35,16 @@ class ThemeTagLib {
     }
 
     /**
+     * Renders a "Posted by [name of a post autor, optionally a link to one's page if provided] on [post creation date if defined]."
+     */
+    def renderPostDateAndAuthor = { Map post ->
+        if (post.author && post.date) {
+            def maybePageAuthorLink = (post.author_link) ? "<a href=\"${post.author_link}\">${post.author}</a>" : post.author
+            "Posted by " + maybePageAuthorLink + " on " + post.date.format('MMMM dd, yyyy')
+        } else {post?.header?.subheading ?: ""}
+    }
+
+    /**
      * Loads configuration bundle represented by .yml files from the specified location.
      */
     def loadConfigBundle = { String location ->
