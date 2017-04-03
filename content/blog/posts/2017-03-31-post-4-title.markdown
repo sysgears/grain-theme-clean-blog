@@ -1,6 +1,7 @@
 ---
 layout: post
-title: "Post 4 title"
+title: Post 4 Title
+subtitle: Post 4 Subheading
 image: post-4-bg.jpg
 date: 2017-03-31 18:27
 author: First Guy's Dog
@@ -10,11 +11,13 @@ published: false
 ---
 
 FOURLid est **laborum dolo** rumes fugats untras. Etharums ser quidem rerum facilis dolores nemis omnis fugats vitaes nemo
-minima rerums unsers sadips amets. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae
-vitae dicta sunt explicabo.
+minima rerums unsers sadips amets.
 
 <!--more-->
+
+Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae
+vitae dicta sunt explicabo.
 
 Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
 doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae

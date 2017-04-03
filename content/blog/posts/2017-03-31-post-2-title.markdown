@@ -1,6 +1,7 @@
 ---
 layout: post
-title: "Post 2 title"
+title: Post 2 title
+subtitle: Post 2 subheading
 image: post-2-bg.jpg
 date: 2017-03-31 16:27
 author: Some Other Guy
@@ -10,11 +11,13 @@ published: false
 ---
 
 TWOLid est **laborum dolo** rumes fugats untras. Etharums ser quidem rerum facilis dolores nemis omnis fugats vitaes nemo
-minima rerums unsers sadips amets. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae
-vitae dicta sunt explicabo.
+minima rerums unsers sadips amets.
 
 <!--more-->
+
+Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae
+vitae dicta sunt explicabo.
 
 Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
 doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae
