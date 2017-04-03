@@ -4,8 +4,8 @@ title: Post 4 Title
 subtitle: Post 4 Subheading
 image: post-4-bg.jpg
 date: 2017-03-31 18:27
-author: First Guy's Dog
-author_email: whoffwhoff@somemail.com
+author: Jason Doe
+author_email: jasondoe@somemail.com
 author_link: https://sysgears.com
 published: false
 ---

@@ -4,8 +4,8 @@ title: Post 3 title
 subtitle: Post 3 subheading
 image: post-3-bg.jpg
 date: 2017-03-31 17:27
-author: Some Other Guy's Friend
-author_email: someotherguysfriendmail@somemail.com
+author: Josh Doe
+author_email: joshdoe@somemail.com
 author_link: https://sysgears.com
 published: false
 ---
