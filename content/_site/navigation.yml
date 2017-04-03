@@ -6,6 +6,6 @@ navigation:
     - name: About
       link: /about.html
     - name: Sample Post
-      link: /post.html
+      link: /blog/posts/sample-post/
     - name: Contact
       link: /contact.html
