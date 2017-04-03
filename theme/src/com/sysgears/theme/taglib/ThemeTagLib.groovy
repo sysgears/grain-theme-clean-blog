@@ -41,7 +41,7 @@ class ThemeTagLib {
         if (post.author && post.date) {
             def maybePageAuthorLink = (post.author_link) ? "<a href=\"${post.author_link}\">${post.author}</a>" : post.author
             "Posted by " + maybePageAuthorLink + " on " + post.date.format('MMMM dd, yyyy')
-        } else {post?.header?.subheading ?: ""}
+        } else ""
     }
 
     /**
