@@ -13,6 +13,9 @@
             <item>
                 <guid>${site.url}${post.url}</guid>
                 <title><![CDATA[${post.title}]]></title>
+                <% if (post.author_email && post.author) { %>
+                    <author>${post.author_email} (${post.author}) </author>
+                <% } %>
                 <pubDate>${post.date.format('E, d MMM yyyy HH:mm:ss Z')}</pubDate>
                 <link><![CDATA[${site.url}${post.url}]]></link>
                 <description><![CDATA[${post.render().content}]]></description>
