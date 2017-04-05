@@ -20,7 +20,7 @@ features {
     highlight = 'none' // 'none', 'pygments'
 
     /**
-     * Defines the way Markdown documents should be processed. Accept the following values:
+     * Defines the way Markdown documents should be processed. Accepts the following values:
      * - txtmark - default value. This way TxtMark is used for
      *      markdown processing.
      * - pegdown - Use Pegdown for markdown documents processing.
@@ -39,12 +39,12 @@ excludes += ['/_[^/]*/.*']
 
 /**
  * Defines the set of variables, appended to the 'site' global variable,
- * depending on environment, that is used.
+ * depending on environment that is used.
  */
 environments {
 
     /**
-     * Configurations, which only available in dev mode.
+     * Configurations, which is only available in dev mode.
      */
     dev {
         log.info 'Development environment is used'
@@ -113,7 +113,7 @@ python {
 
     /**
      * If native system python is used, then this value defines the paths to python executables. If any of these fails,
-     * then the attempt to use next one occurs.
+     * then the attempt to use next one takes place.
      */
     //cmd_candidates = ['python2', 'python', 'python2.7']
 
@@ -130,12 +130,21 @@ ruby {
     /**
      * An interpreter that is used used for executing Ruby scripts, since some pieces of functionality of the theme (e.g. AsciiDoc and Compass) are
      * achieved through utilizing capabilities of related Ruby gems. This property accepts the following values:
-     * - auto - Default value. Uses Python that is installed on your system. If its not available, then falls back to Jython.
-     * - python - uses Python that is installed on your system.
-     * - jython - uses Jython integrated in Grain.
+     * - auto - Default value. Uses Ruby that is installed on your system. If its not available, then falls back to JRuby.
+     * - ruby - uses Ruby that is installed on your system.
+     * - jruby - uses jRuby integrated in Grain.
      */
-    interpreter = 'jruby'   // 'auto', 'ruby', 'jruby'
+    interpreter = 'jruby'
+
+    /**
+     * If native system Ruby is used, then this value defines the paths to Ruby executables. If any of these fails,
+     * then the attempt to use next one takes place.
+     */
     //cmd_candidates = ['ruby', 'ruby1.8.7', 'ruby1.9.3', 'user.home/.rvm/bin/ruby']
+
+    /**
+     * Forces the specific version of Ruby Gems - a tool for managing ruby gems.
+     */
     //ruby_gems = '2.2.2'
 }
 
