@@ -26,6 +26,15 @@ features {
      * - pegdown - Use Pegdown for markdown documents processing.
      */
     markdown = 'txtmark'   // 'txtmark', 'pegdown'
+
+    /**
+     * Defines Compass behavior. Compass is a Ruby gem, used by Grain for processing SASS/SCSS styles.
+     * This property accepts the following values:
+     * - auto, ruby, jruby - these do the same thing, actually. They all use the specified Ruby interpreter (or fall
+     *                       back to Jruby, if no interpreter is defined) to install the Compass Gem and start the
+     *                       Compass service for processing of SASS/SCSS.
+     */
+    compass = 'none'
 }
 
 /**
@@ -69,7 +78,7 @@ environments {
         /**
          * Base URL for the site
          */
-        url = ''
+        url = '.'
 
         /**
          * Should posts with "published = false" be included in generated site sources.
@@ -147,6 +156,12 @@ ruby {
      */
     //ruby_gems = '2.2.2'
 }
+
+/**
+ * Setting this variable to "true" enables prefixing resource relative location with the value
+ * of the "site.url" variable.
+ */
+generate_absolute_links = true;
 
 /**
  * A base url to search the post *.markdown files within.
