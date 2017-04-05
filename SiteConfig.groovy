@@ -11,6 +11,8 @@ features {
     markdown = 'txtmark'   // 'txtmark', 'pegdown'
 }
 
+excludes += ['/_[^/]*/.*'] // excludes directories that start from '_'
+
 environments {
     dev {
         log.info 'Development environment is used'
