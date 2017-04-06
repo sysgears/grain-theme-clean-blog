@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Post 4 Title
-subtitle: Post 4 Subheading
+title: Science has not yet mastered prophecy
+subtitle: We predict too much for the next year and yet far too little for the next ten.
 image: post-4-bg.jpg
-date: 2017-03-31 18:27
+date: 2017-04-01 18:27
 author: Jason Doe
 author_email: jasondoe@somemail.com
 author_link: '#'

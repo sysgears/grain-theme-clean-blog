@@ -179,7 +179,7 @@ blog {
     /**
      * The amount of blog posts to be displayed on a site page.
      */
-    posts_per_page = 2
+    posts_per_page = 4
 }
 
 /**
