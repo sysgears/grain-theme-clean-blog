@@ -155,7 +155,7 @@ ruby {
  * Setting this variable to "true" enables prefixing resource relative location with the value
  * of the "site.url" variable.
  */
-generate_absolute_links = true
+generate_absolute_links = false
 
 /**
  * A base url to search the post *.markdown files within.
