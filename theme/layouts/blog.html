@@ -26,7 +26,7 @@ layout: site_page
                     <% } %>
 
                     <% if (page.paginator.prev_page) { %>
-                    <li class="previous col-lg-6 col-md-6 col-sm-6 col-xs-6 col-xs-pull-6"><a href="${link page.paginator.prev_page}" >&larr; Newer Posts  </a></li>
+                    <li class="previous col-lg-6 col-md-6 col-sm-6 col-xs-6 ${page.paginator.next_page ? 'col-xs-pull-6' : ''}"><a href="${link page.paginator.prev_page}" >&larr; Newer Posts  </a></li>
                     <% } %>
                 </div>
 
