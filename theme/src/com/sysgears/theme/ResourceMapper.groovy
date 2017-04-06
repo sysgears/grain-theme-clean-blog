@@ -2,6 +2,9 @@ package com.sysgears.theme
 
 import com.sysgears.grain.taglib.Site
 import com.sysgears.theme.pagination.Paginator
+import org.joda.time.DateTime
+
+import java.time.format.DateTimeFormatter
 
 /**
  * Change pages urls and extend models.
@@ -44,9 +47,11 @@ class ResourceMapper {
             switch (page.url) {
                 case '/blog/atom.xml':
                 case '/blog/rss.xml':
-                    def lastUpdated = posts.max { it.updated.time }.updated
-                    def feedPosts = posts.take(site.blog_feed.posts_per_feed as Integer)
-                    updatedResources << (page + [posts: feedPosts, lastUpdated: lastUpdated])
+                    if (!posts.empty) {
+                        def lastUpdated = posts.max { it.updated.time }.updated
+                        def feedPosts = posts.take(site.blog_feed.posts_per_feed as Integer)
+                        updatedResources << (page + [posts: feedPosts, lastUpdated: lastUpdated])
+                    } else updatedResources << (page + [posts: [], lastUpdated: new Date()])
                     break
                 case '/':
                     applyPagination(posts, 3, page.url)
