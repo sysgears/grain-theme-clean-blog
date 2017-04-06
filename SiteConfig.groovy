@@ -76,9 +76,10 @@ environments {
         log.info 'Production environment is used'
 
         /**
-         * Base URL for the site
+         * Base URL for the site. Please note that you need to explicitly specify this in order for your
+         * theme to be correctly generated.
          */
-        url = '.'
+        url = ''
 
         /**
          * Should posts with "published = false" be included in generated site sources.
