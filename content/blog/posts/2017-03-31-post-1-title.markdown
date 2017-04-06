@@ -6,7 +6,7 @@ image: post-bg.jpg
 date: 2017-03-31 15:27
 author: John Doe
 author_email: johndoe@somemail.com
-author_link: https://sysgears.com
+author_link: '#'
 published: false
 ---
 
