@@ -52,4 +52,27 @@ class ThemeTagLib {
             taglib.page += taglib.site.headerParser.parse(file, file.text)
         }
     }
+
+    /**
+     * Generates html tag for an image
+     *
+     * @attr location image location
+     * @attr width (optional) image width
+     * @attr height (optional) image height
+     * @attr alt (optional) alternative image text
+     * @attr desc (optional) image description (would be displayed under the picture)
+     */
+    def img = { Map args ->
+        String location = args["location"]
+        def id = args["id"] ? " id=\"${args["id"]}\"" : ""
+        def widthStr = args["width"] ? " width=\"${args["width"]}\"" : ""
+        def heightStr = args["height"] ? " height=\"${args["height"]}\"" : ""
+        def classStr = args["class"] ? " class=\"${args["class"]}\"" : ""
+        def alt = args["alt"] ? args["alt"] : [args["width"], args["height"]].max() < 24 ? " " : "Image"
+        def result = "<img${id}${widthStr}${heightStr}${classStr} src=\"${taglib.r(location)}\" alt=\"${alt}\">"
+        if (args["desc"]) {
+            result += "\n<div><em>${args["desc"]}</em></div>"
+        }
+        result
+    }
 }
