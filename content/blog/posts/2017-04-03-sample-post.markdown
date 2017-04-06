@@ -55,7 +55,7 @@ of a marble, the most beautiful you can imagine. That beautiful, warm, living ob
 fragile, so delicate, that if you touched it with a finger it would crumble and fall apart. Seeing
 this has to change a man.
 
-![image] (${site.url}/images/post-sample-image.jpg)
+![image] (${r '/images/post-sample-image.jpg'})
 
 <span class="caption text-muted">To go places and do things that have never been done before – that’s what living is all about.</span>
 
