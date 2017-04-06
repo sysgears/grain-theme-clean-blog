@@ -33,7 +33,7 @@ class ResourceMapper {
     }
 
     /**
-     * Customizes pages models, applies pagination (creates new pages)
+     * Customizes pages models, applies pagination (creates new pages).
      */
     private def customizeModels = { List resources ->
         def posts = resources.findAll { it.layout == 'post' }
@@ -72,7 +72,7 @@ class ResourceMapper {
     }
 
     /**
-     * Customize site post URLs
+     * Customize site post URLs.
      */
     private def customizeUrls = { Map resource ->
         String location = resource.location
@@ -108,7 +108,7 @@ class ResourceMapper {
     }
 
     /**
-     * Fills in page `date` and `updated` fields 
+     * Fills in page `date` and `updated` fields.
      */
     private def fillDates = { Map it ->
         def update = [date: it.date ? Date.parse(site.datetime_format, it.date) : new Date(it.dateCreated as Long),

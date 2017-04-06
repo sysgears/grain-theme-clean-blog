@@ -22,9 +22,9 @@ class ThemeTagLib {
     }
 
     /**
-     * Converts a date to XML date time format: 2013-12-31T12:49:00+07:00
+     * Converts a date to XML date time format: 2013-12-31T12:49:00+07:00.
      *
-     * @attr date the date to convert
+     * @attr date the date to convert.
      */
     def xmlDateTime = { Map model ->
         if (!model.date) throw new IllegalArgumentException('Tag [xmlDateTime] is missing required attribute [date]')
@@ -35,7 +35,7 @@ class ThemeTagLib {
     }
 
     /**
-     * Renders a "Posted by [name of a post author, also may be a link to author's page, if provided] on [post creation date]."
+     * Renders a "Posted by [name of a post author, also may be a link to author's page, if provided] on [post creation date].".
      */
     def renderPostDateAndAuthor = { Map post ->
         if (post.author && post.date) {
