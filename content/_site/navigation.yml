@@ -1,5 +1,7 @@
 navigation:
- brand: Start Bootstrap
+ brand:
+  title: Start Bootstrap
+  link: /
  sections:
     - name: Home
       link: /
