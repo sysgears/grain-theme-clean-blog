@@ -35,7 +35,7 @@ class ThemeTagLib {
     }
 
     /**
-     * Renders a "Posted by [name of a post autor, optionally a link to one's page if provided] on [post creation date if defined]."
+     * Renders a "Posted by [name of a post author, also may be a link to author's page, if provided] on [post creation date]."
      */
     def renderPostDateAndAuthor = { Map post ->
         if (post.author && post.date) {
