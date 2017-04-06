@@ -40,6 +40,11 @@ blockquote {
   color: #808080;
   font-style: italic;
 }
+
+blockquote p:first-child {
+  margin-top: 0px;
+}
+
 hr.small {
   max-width: 100px;
   margin: 15px auto;
