@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <title><![CDATA[${site.blog_feed.title}]]></title>
+    <title><![CDATA[${site.blog.title}]]></title>
     <link href="${site.url}${page.url}" rel="self"/>
     <link href="${site.url}/"/>
     <updated>${page.lastUpdated.format("yyyy-MM-dd'T'HH:mm:ssXXX")}</updated>

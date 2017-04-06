@@ -49,12 +49,12 @@ class ResourceMapper {
                 case '/blog/rss.xml':
                     if (!posts.empty) {
                         def lastUpdated = posts.max { it.updated.time }.updated
-                        def feedPosts = posts.take(site.blog_feed.posts_per_feed as Integer)
+                        def feedPosts = posts.take(site.blog.posts_per_feed as Integer)
                         updatedResources << (page + [posts: feedPosts, lastUpdated: lastUpdated])
                     } else updatedResources << (page + [posts: [], lastUpdated: new Date()])
                     break
                 case '/':
-                    applyPagination(posts, 3, page.url)
+                    applyPagination(posts, site.blog.posts_per_page, page.url)
                     break
                 case ~/${site.posts_base_url}.*/:
                     def post = posts.find { it.url == page.url }

@@ -165,7 +165,7 @@ posts_base_url = '/blog/posts/'
 /**
  * Blog functionality configuration.
   */
-blog_feed {
+blog {
     /**
      * Blog title to be displayed in RSS/Atom feeds.
      */
@@ -175,6 +175,11 @@ blog_feed {
      * The amount of blog posts to be displayed in a feed.
      */
     posts_per_feed = 20
+
+    /**
+     * The amount of blog posts to be displayed on a site page.
+     */
+    posts_per_page = 2
 }
 
 /**
