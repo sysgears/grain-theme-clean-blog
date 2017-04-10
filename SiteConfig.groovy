@@ -166,6 +166,12 @@ posts_base_url = '/blog/posts/'
  * Blog functionality configuration.
   */
 blog {
+
+    /**
+     * An email, where a mail from a contact form will be sent.
+     */
+    contact_email = "your@email.com"
+
     /**
      * Blog title to be displayed in RSS/Atom feeds.
      */
