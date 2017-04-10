@@ -1,9 +1,16 @@
 <!-- Page Header -->
 <!-- Set your background image for this header on the line below. -->
-<% def emptyString = ""
-   def imagePath = page.image ? "/images/${page.image}" : emptyString
+<%
+    def headerBackgroundStyle = null;
+    if (page.image) {
+        def imageUrl = r("/images/${page.image}")
+        headerBackgroundStyle = "background-image: url('${imageUrl}')"
+    } else {
+        println "Backgound image is not defined!"
+        headerBackgroundStyle = "background-color: #B6B6B6"
+    }
 %>
-<header class="intro-header" style="background-image: url('${page.image ? r(imagePath) : emptyString}')">
+<header class="intro-header" style="${headerBackgroundStyle}">
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
