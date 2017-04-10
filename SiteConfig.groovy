@@ -213,9 +213,11 @@ commands = [
         file = new File(content_dir, location)
         file.parentFile.mkdirs()
         file.exists() || file.write("""---
-layout: default
+layout: site_page
 title: "${pageTitle}"
-published: true
+heading: "${pageTitle}"
+subheading: ""
+published: false
 ---
 """)}
 ]
