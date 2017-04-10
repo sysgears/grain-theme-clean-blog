@@ -204,7 +204,7 @@ deploy = new GHPagesDeployer(site).deploy
   */
 commands = [
 /**
- * Creates new page.
+ * Creates new page. Syntax: ./grainw create-page /path/to/the/page "Page Title"
  *
  * location - relative path to the new page, should start with the /, i.e. /pages/index.html.
  * pageTitle - new page title
@@ -216,7 +216,36 @@ commands = [
 layout: site_page
 title: "${pageTitle}"
 heading: "${pageTitle}"
+image: post-bg.jpg
 subheading: ""
+published: false
+---
+""")},
+
+/**
+ * Creates new post. Syntax: ./grainw create-post "Post Title"
+ *
+ * postTitle - new post title
+ */
+'create-post': { String postTitle ->
+    def date = new Date()
+    def fileDate = date.format("yyyy-MM-dd")
+    def filename = fileDate + "-" + postTitle.encodeAsSlug() + ".markdown"
+    def blogDir = new File(content_dir + "${posts_base_url}")
+    if (!blogDir.exists()) {
+        blogDir.mkdirs()
+    }
+    def file = new File(blogDir, filename)
+
+    file.exists() || file.write("""---
+layout: post
+title: "${postTitle}"
+subtitle: ""
+image: "post-bg.jpg"
+date: "${date.format(datetime_format)}"
+author: "John Doe"
+author_email: ""
+author_link: "#"
 published: false
 ---
 """)}
