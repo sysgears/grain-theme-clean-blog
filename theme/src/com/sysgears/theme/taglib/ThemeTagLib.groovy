@@ -45,11 +45,32 @@ class ThemeTagLib {
     }
 
     /**
-     * Loads configuration bundle represented by .yml files from the specified location.
+     * Loads configuration bundle represented by .yml files from the specified location and appends it to the
+     * "page" object.
      */
-    def loadConfigBundle = { String location ->
-        new File(taglib.site.content_dir as String, location).eachFileMatch(~/.*\.yml$/) { file ->
-            taglib.page += taglib.site.headerParser.parse(file, file.text)
+    def loadConfigToPage = { String location ->
+        taglib.page += loadConfig(location)
+    }
+
+    /**
+     * Loads configuration file or set of configuration files (if the parameter is folder) and returns it as a map.
+     *
+     * @param location path to a single .yml configuration file or a folder with .yml files.
+     */
+    def loadConfig = { location ->
+        def config = new File(taglib.site.content_dir as String, location)
+        if (config.exists()) {
+            if (config.isFile()) {
+                return taglib.site.headerParser.parse(config, config.text)
+            } else if (config.isDirectory()) {
+                def out = [:]
+                config.eachFileMatch(~/.*\.yml$/) { file ->
+                    out += taglib.site.headerParser.parse(file, file.text)
+                }
+                return out
+            } else [:]
+        } else {
+            return [:]
         }
     }
 
