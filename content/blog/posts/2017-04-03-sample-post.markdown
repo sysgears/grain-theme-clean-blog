@@ -32,11 +32,11 @@ are far more valuable than those which divide us.
 
 ## The Final Frontier
 
-There can be no thought of finishing for ‘aiming for the stars.’ Both figuratively and literally, it
+There can be no thought of finishing for 'aiming for the stars.' Both figuratively and literally, it
 is a task to occupy the generations. And no matter how much progress one makes, there is always the
 thrill of just beginning.
 
-There can be no thought of finishing for ‘aiming for the stars.’ Both figuratively and literally, it
+There can be no thought of finishing for 'aiming for the stars.' Both figuratively and literally, it
 is a task to occupy the generations. And no matter how much progress one makes, there is always the
 thrill of just beginning.
 
@@ -57,13 +57,13 @@ this has to change a man.
 
 ${img (location:"/images/post-sample-image.jpg", class:"img-responsive")}
 
-<span class="caption text-muted">To go places and do things that have never been done before – that’s what living is all about.</span>
+<span class="caption text-muted">To go places and do things that have never been done before – that's what living is all about.</span>
 
 Space, the final frontier. These are the voyages of the Starship Enterprise. Its five-year mission:
 to explore strange new worlds, to seek out new life and new civilizations, to boldly go where no man
 has gone before.
 
-As I stand out here in the wonders of the unknown at Hadley, I sort of realize there’s a fundamental
+As I stand out here in the wonders of the unknown at Hadley, I sort of realize there's a fundamental
 truth to our nature, Man must explore, and this is exploration at its greatest.
 
 Placeholder text by [Space Ipsum](http://spaceipsum.com/). Photographs by [NASA on The Commons](https://www.flickr.com/photos/nasacommons/).
