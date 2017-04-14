@@ -1,6 +1,7 @@
 ![Banner](https://raw.githubusercontent.com/sysgears/grain-theme-clean-blog/master/banner.jpg)
 
-#Grain Bootstrap Theme Clean Blog
+Grain Bootstrap Theme Clean Blog
+================================
 
 This theme is based on Start Bootstrap [Clean Blog Template] and
 was adapted for [Grain] framework.
