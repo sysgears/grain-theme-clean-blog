@@ -1,11 +1,11 @@
 ---
 layout: post
-title: Post 2 title
-subtitle: Post 2 subheading
-image: post-2-bg.jpg
-date: 2017-03-31 16:27
-author: James Doe
-author_email: jamesdoe@somemail.com
+title: I believe every human has a finite number of heartbeats. I don't intend to waste any of mine.
+subtitle: ''
+image: post-bg.jpg
+date: 2017-04-02 15:27
+author: John Doe
+author_email: johndoe@somemail.com
 author_link: '#'
 published: false
 ---
