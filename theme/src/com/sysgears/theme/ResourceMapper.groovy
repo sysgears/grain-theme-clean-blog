@@ -4,8 +4,6 @@ import com.sysgears.grain.taglib.Site
 import com.sysgears.theme.pagination.Paginator
 import org.joda.time.DateTime
 
-import java.time.format.DateTimeFormatter
-
 /**
  * Change pages urls and extend models.
  */
