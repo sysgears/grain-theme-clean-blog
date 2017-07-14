@@ -3,6 +3,8 @@
 Grain Bootstrap Theme Clean Blog
 ================================
 
+[![Twitter Follow](https://img.shields.io/twitter/follow/sysgears.svg?style=social)](https://twitter.com/sysgears)
+
 This theme is based on Start Bootstrap [Clean Blog Template] and
 was adapted for [Grain] framework.
 
